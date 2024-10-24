@@ -1,0 +1,26 @@
+/* navigation.component.css */
+mat-toolbar {
+  background-color: #1976d2; /* Adjust color to match your brand */
+  color: white;
+  padding: 0 15px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+mat-toolbar span {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.flex-grow {
+  flex: 1 1 auto;
+}
+
+button {
+  margin: 0 10px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+button:hover {
+  background-color: #1565c0; /* Darker shade for hover effect */
+  color: #fff;
+}

@@ -1,0 +1,9 @@
+<mat-toolbar color="primary">
+  <span>My App</span>
+  <span class="flex-grow"></span> <!-- Ensures the buttons align to the right -->
+  <!-- Navigation Buttons -->
+  <button mat-button routerLink="/home">Home</button>
+  <!-- Conditional Rendering for Auth -->
+  <button *ngIf="authService.isAuthenticated" mat-button (click)="logout()">Logout</button>
+  <button *ngIf="!authService.isAuthenticated" mat-button routerLink="/login">Login</button>
+</mat-toolbar>
